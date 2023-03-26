@@ -320,6 +320,18 @@
     [
       "4b91ea98-c6c2-4ad9-ac64-8fa761d16f37",
       ""
+    ],
+    [
+      "788fccce-441b-4b47-abec-e22400b84986",
+      "Led_RGB_WS2812B"
+    ],
+    [
+      "c50a5be6-7a0e-42a3-93e0-82c30d7d76f1",
+      "SAM-M8Q"
+    ],
+    [
+      "09c66f75-8ed6-4ff3-804f-1f92b318aac1",
+      "Buzzer"
     ]
   ],
   "text_variables": {}
