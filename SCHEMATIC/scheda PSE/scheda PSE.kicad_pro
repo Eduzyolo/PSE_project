@@ -326,12 +326,20 @@
       "Led_RGB_WS2812B"
     ],
     [
-      "c50a5be6-7a0e-42a3-93e0-82c30d7d76f1",
-      "SAM-M8Q"
+      "9f40c713-1bcb-4f1c-9e01-30533e77b65d",
+      "RP2040"
     ],
     [
-      "09c66f75-8ed6-4ff3-804f-1f92b318aac1",
-      "Buzzer"
+      "79aec321-3c99-4e59-b384-4589f6950bd0",
+      "Interfaccia utente"
+    ],
+    [
+      "7ee2252d-ff7a-4cf9-a8b8-589518dbae10",
+      "Alimentazione"
+    ],
+    [
+      "7389e30f-cc4a-4964-bca3-cd95052ca62a",
+      "Sensori"
     ]
   ],
   "text_variables": {}
