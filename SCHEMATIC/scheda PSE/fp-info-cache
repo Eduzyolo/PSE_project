@@ -1,4 +1,4 @@
-20493608723417679
+20497011470022783
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -86170,6 +86170,13 @@ USB_C_304A-ACP16X
 16
 13
 _PSE
+QFN-16
+
+
+0
+16
+16
+_PSE
 QFN40P700X700X90-57N-D
 RP 2040
 Integrated Circuit
@@ -86183,6 +86190,13 @@ RotaryEncoder_Switch
 0
 7
 5
+_PSE
+SAM_M8Q
+
+
+0
+20
+20
 _PSE
 temt6000
 
