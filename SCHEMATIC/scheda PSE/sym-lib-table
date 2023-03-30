@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "pse")(type "KiCad")(uri "${KIPRJMOD}/libreria/_PSE 2022.kicad_sym")(options "")(descr ""))
+  (lib (name "MMA8451Q")(type "KiCad")(uri "${KIPRJMOD}/libreria/MMA8451Q.kicad_sym")(options "")(descr ""))
+)

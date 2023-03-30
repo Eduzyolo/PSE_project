@@ -816,6 +816,9 @@
     (path "/9f40c713-1bcb-4f1c-9e01-30533e77b65d/ff9e281f-1acf-4a22-b037-b2c8581b6774"
       (reference "C?") (unit 1) (value "100n") (footprint "")
     )
+    (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/134e8381-58d7-4982-86cb-ceec7944f28b"
+      (reference "D?") (unit 1) (value "RBR1VWM30ATFTR") (footprint "")
+    )
     (path "/79aec321-3c99-4e59-b384-4589f6950bd0/2ec7be17-629b-4749-a603-468d9f394dd7"
       (reference "D?") (unit 1) (value "LED_alive") (footprint "")
     )
@@ -851,9 +854,6 @@
     )
     (path "/788fccce-441b-4b47-abec-e22400b84986/d47a2b6a-77b3-42bd-8aae-6996a1a1de4b"
       (reference "D?") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
-    )
-    (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/e4c9c3e3-6cd0-4023-829d-86f28146df03"
-      (reference "D?") (unit 1) (value "S1B") (footprint "")
     )
     (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/f20f4ead-77fe-4c30-bc62-02b62a37a7c5"
       (reference "D?") (unit 1) (value "TVS VBR 17V IBR=1mA") (footprint "Diode_THT:D_DO-201AE_P15.24mm_Horizontal")
