@@ -1,9 +1,13 @@
-void setup() {
-  // put your setup code here, to run once:
 
-}
+// #define MAIN_FLOW
+#define TEST_BUZZER
 
-void loop() {
-  // put your main code here, to run repeatedly:
+#ifdef TEST_BUZZER
+#include <Arduino.h>
+#include "Buzzer.h"
+#endif
 
-}
+#ifdef MAIN_FLOW
+void setup() {}
+void loop() {}
+#endif
