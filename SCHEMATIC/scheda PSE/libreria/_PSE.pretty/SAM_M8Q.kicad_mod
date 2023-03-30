@@ -59,7 +59,7 @@
   (pad "18" smd rect (at -0.25 -7.2) (size 1.5 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 206e8542-a2e3-425d-99c9-15882912d88d))
   (pad "19" smd rect (at -2.15 -7.2) (size 1.5 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0603122c-4f4a-4cf7-9f51-1ce24939dd32))
   (pad "20" smd rect (at -4.05 -7.2) (size 1.5 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp c07aacc0-2b39-4f97-b68c-b67315ed931b))
-  (model "${MY_3DMODEL}/GPS_sam-m8q.STEP"
+  (model "${KIPRJMOD}/libreria/3dmodels/GPS_sam-m8q.STEP"
     (offset (xyz -8 7.5 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

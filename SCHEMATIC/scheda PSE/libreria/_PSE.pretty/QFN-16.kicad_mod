@@ -259,7 +259,7 @@
   (pad "P14" smd rect (at 0.5 -1.475 90) (size 1.22 0.31) (layers "F.Cu") (tstamp 5993db1e-b0fe-4d6f-8719-83d61fc32100))
   (pad "P15" smd rect (at 0 -1.475 90) (size 1.22 0.31) (layers "F.Cu") (tstamp ce8246d4-a42c-4f47-adcb-3f244e96d6a7))
   (pad "P16" smd rect (at -0.5 -1.475 90) (size 1.22 0.31) (layers "F.Cu") (tstamp e58bb43d-ac54-4948-9b59-897d9d43ef92))
-  (model "${MY_3DMODEL}/MMA8451Q.STEP"
+  (model "${KIPRJMOD}/libreria/3dmodels/MMA8451Q.STEP"
     (offset (xyz 1.5 1.5 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))
