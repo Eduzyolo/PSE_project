@@ -1,13 +1,11 @@
-#ifdef TEST_BUZZER
-
 #include "Buzzer.h"
 
-void setup() {
+void setup_buzzer() {
     // Initialize the buzzer pin as an output
     pinMode(BUZZER_PIN, OUTPUT);
 }
 
-void loop() {
+void loop_buzzer() {
     // Play the melody
     for (int i = 0; i < sizeof(melody) / sizeof(melody[0]); i++) {
         if (melody[i] == 0) {
@@ -21,4 +19,3 @@ void loop() {
         }
     }
 }
-#endif

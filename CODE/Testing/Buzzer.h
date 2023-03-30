@@ -1,4 +1,4 @@
-#ifdef TEST_BUZZER
+#include "Arduino.h"
 
 // Define the pin connected to the buzzer
 const int BUZZER_PIN = 18;
@@ -21,7 +21,6 @@ const int melody[] = {
     tone_C5, tone_D5, tone_E5, 0 // the 0 denotes a pause in the melody
 };
 
-void setup();
-void loop();
+void setup_buzzer();
+void loop_buzzer();
 
-#endif
