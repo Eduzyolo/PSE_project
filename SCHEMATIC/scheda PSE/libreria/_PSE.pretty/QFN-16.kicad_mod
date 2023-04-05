@@ -227,6 +227,7 @@
       (xy 2.13 1.2)
       (xy 0.81 1.2)
     ) (layer "F.Mask") (width 0.01) (fill solid) (tstamp ffd42a43-4dc7-4ee4-9bc6-9d0e9a0e880b))
+  (fp_rect (start -2.4 -2.4) (end 2.4 2.4) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 33986771-18a1-4135-9a21-dd16a8442411))
   (fp_line (start 1.5 -0.8) (end 1.5 -1.2) (layer "F.Fab") (width 0.005) (tstamp 027ee536-2d44-4a5b-a24d-553f97527e86))
   (fp_line (start -1.5 1.2) (end -1.5 0.8) (layer "F.Fab") (width 0.005) (tstamp 1f91a622-03d5-484f-b381-19005cbc9160))
   (fp_line (start -1.5 -0.3) (end -1.5 -0.7) (layer "F.Fab") (width 0.005) (tstamp 264a36aa-b3f6-4aab-9971-65d496234d3a))

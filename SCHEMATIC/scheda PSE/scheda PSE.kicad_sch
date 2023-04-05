@@ -1122,13 +1122,16 @@
       (reference "SW7") (unit 1) (value "Power_button") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
     )
     (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/042ad4e4-c89c-4749-947a-abbfee146246"
-      (reference "TP1") (unit 1) (value "VBUS") (footprint "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile")
+      (reference "TP1") (unit 1) (value "VBUS") (footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm")
+    )
+    (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/a1be7487-916a-4436-acd7-dc32f0d1acd0"
+      (reference "TP2") (unit 1) (value "5V") (footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm")
     )
     (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/1b03d0e5-b7a2-4bc6-a02d-aac68bf827b0"
-      (reference "TP2") (unit 1) (value "3V3") (footprint "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile")
+      (reference "TP3") (unit 1) (value "3V3") (footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm")
     )
     (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/c7186e88-abb5-4f1c-9a7d-2bd6852cc56f"
-      (reference "TP3") (unit 1) (value "3V3A") (footprint "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile")
+      (reference "TP4") (unit 1) (value "3V3A") (footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm")
     )
     (path "/9f40c713-1bcb-4f1c-9e01-30533e77b65d/3b46af19-3d12-4595-963a-3eda0bc85bc5"
       (reference "U1") (unit 1) (value "RP2040") (footprint "_PSE:QFN40P700X700X90-57N-D")
