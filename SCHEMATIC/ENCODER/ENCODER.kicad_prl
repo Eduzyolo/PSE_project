@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -17,13 +17,13 @@
       "dimensions": false,
       "footprints": false,
       "graphics": false,
-      "keepouts": true,
+      "keepouts": false,
       "lockedItems": false,
       "otherItems": false,
       "pads": false,
-      "text": true,
-      "tracks": true,
-      "vias": false,
+      "text": false,
+      "tracks": false,
+      "vias": true,
       "zones": false
     },
     "visible_items": [
@@ -36,7 +36,6 @@
       8,
       9,
       10,
-      11,
       12,
       13,
       14,
@@ -63,7 +62,7 @@
       36
     ],
     "visible_layers": "ff89f33_ffffffff",
-    "zone_display_mode": 0
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "ENCODER.kicad_prl",
