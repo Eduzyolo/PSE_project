@@ -2286,7 +2286,7 @@
     (uuid 1a175b4f-25ca-472c-87d0-a4ef4d408f2c)
     (property "Reference" "SW7" (id 0) (at 91.44 124.1892 0))
     (property "Value" "Power_button" (id 1) (at 91.44 126.7261 0))
-    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm" (id 2) (at 91.44 125.73 0)
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP0" (id 2) (at 91.44 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 91.44 125.73 0)
