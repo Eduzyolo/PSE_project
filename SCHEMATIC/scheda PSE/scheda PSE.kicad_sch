@@ -91,6 +91,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 3de589ec-8358-45c8-881a-5c48e12a8fca)
   )
+  (wire (pts (xy 114.3 107.95) (xy 68.58 107.95))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 3efc38ba-f6fc-49a3-b96d-fe26d6193c02)
+  )
   (wire (pts (xy 194.31 96.52) (xy 206.375 96.52))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 41eca3c5-d18f-4513-a0f5-901d7ffbb04c)
@@ -110,6 +114,10 @@
   (wire (pts (xy 149.86 80.01) (xy 161.925 80.01))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 6a2516a1-9442-456e-b268-e2a8b5b6fb36)
+  )
+  (wire (pts (xy 68.58 107.95) (xy 68.58 125.73))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 6f715b52-4207-4398-b4df-eea1b77f0a4b)
   )
   (wire (pts (xy 103.505 74.295) (xy 114.3 74.295))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -178,6 +186,10 @@
   (wire (pts (xy 149.86 87.63) (xy 161.925 87.63))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid eaad29f3-9c21-4f28-9462-792787f6da61)
+  )
+  (wire (pts (xy 68.58 125.73) (xy 74.93 125.73))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid eb89cafd-ea83-4852-9cf8-8f5c5f741e51)
   )
   (wire (pts (xy 149.86 121.285) (xy 161.925 121.285))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -468,6 +480,10 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 1fbc4ae1-50fe-424d-a27d-b9c34b92665f)
     )
+    (pin "OUTPUT_USB_EN" input (at 74.93 125.73 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 8cb4658a-f1d8-4fe3-a16f-79c5f886eee0)
+    )
   )
 
   (sheet (at 114.3 53.975) (size 35.56 76.835)
@@ -596,6 +612,10 @@
     (pin "PWM_SERVO3" output (at 149.86 60.325 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid a770f631-14c5-48a4-9955-0681d0c14147)
+    )
+    (pin "OUTPUT_USB_EN" output (at 114.3 107.95 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid e0a8c464-aa40-4a69-98b7-1ec9d6d4e6b8)
     )
   )
 
@@ -1203,6 +1223,9 @@
     (path "/7389e30f-cc4a-4964-bca3-cd95052ca62a/823acda2-50d6-4d98-9226-185e6be88fc6"
       (reference "Q3") (unit 1) (value "IRLML9301") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
+    (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/f4b96b80-f8e2-4d70-bb5d-4a71422936e9"
+      (reference "Q4") (unit 1) (value "IRLML9301") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
     (path "/788fccce-441b-4b47-abec-e22400b84986/8803450e-3aec-4af4-b3d7-85fb6efd30e4"
       (reference "R1") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
@@ -1286,6 +1309,9 @@
     )
     (path "/7389e30f-cc4a-4964-bca3-cd95052ca62a/269d2bc5-9c9f-4fe7-9ba1-3879d7941aab"
       (reference "R28") (unit 1) (value "470") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/62a40344-4203-4e50-bc2b-71e34a2ebebe"
+      (reference "R29") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/9f40c713-1bcb-4f1c-9e01-30533e77b65d/73291c1d-3c5d-4bf2-928d-33312c2dce65"
       (reference "SW1") (unit 1) (value "RESET_SW") (footprint "Button_Switch_SMD:SW_SPST_EVQP0")
