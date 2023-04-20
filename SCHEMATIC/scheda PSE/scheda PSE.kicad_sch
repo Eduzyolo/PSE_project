@@ -163,10 +163,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid c18c6034-9beb-483b-98dc-a9a2bdca013a)
   )
-  (wire (pts (xy 149.86 69.215) (xy 161.925 69.215))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid c8242048-d67e-4eb1-ae58-8d82ebdf0495)
-  )
   (wire (pts (xy 149.86 106.045) (xy 161.925 106.045))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid ceac017b-cff4-4acf-9aa1-b4a58062fc83)
@@ -356,10 +352,6 @@
     (pin "SAM_PPS" output (at 161.925 85.09 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid fc62c9b5-f467-4fdd-a57a-dbd0cb1cb1b0)
-    )
-    (pin "ACC_SA0" input (at 161.925 69.215 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1f23a440-4807-4e6c-9456-452cce87deba)
     )
     (pin "ESP_TX" output (at 161.925 91.44 180)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -580,10 +572,6 @@
     (pin "GPS_PPS" input (at 149.86 85.09 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid e5ef909b-db8a-4027-b407-77f622cec15d)
-    )
-    (pin "ACC_SA0" output (at 149.86 69.215 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 34e87255-edde-4aa5-8f18-6e5c045e23d5)
     )
     (pin "GPS_EN" output (at 149.86 80.01 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -953,6 +941,12 @@
     (path "/7389e30f-cc4a-4964-bca3-cd95052ca62a/f1354e6e-3bb1-4820-9642-f5f11f4faa33"
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
     )
+    (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/9e4ac864-2386-4392-9456-227021dbc91f"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/7389e30f-cc4a-4964-bca3-cd95052ca62a/f8276108-4e71-4cbf-b8a4-c1496d1ada89"
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
+    )
     (path "/79aec321-3c99-4e59-b384-4589f6950bd0/843d4752-6e63-4d95-a426-482380d37ea8"
       (reference "BZ1") (unit 1) (value "Buzzer") (footprint "_PSE:MLT-8530")
     )
@@ -1312,6 +1306,9 @@
     )
     (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/62a40344-4203-4e50-bc2b-71e34a2ebebe"
       (reference "R29") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/7ee2252d-ff7a-4cf9-a8b8-589518dbae10/db7ec8b6-f9a8-4b1c-85f3-02bf182afec2"
+      (reference "R30") (unit 1) (value "47k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/9f40c713-1bcb-4f1c-9e01-30533e77b65d/73291c1d-3c5d-4bf2-928d-33312c2dce65"
       (reference "SW1") (unit 1) (value "RESET_SW") (footprint "Button_Switch_SMD:SW_SPST_EVQP0")
