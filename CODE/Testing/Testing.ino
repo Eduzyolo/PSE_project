@@ -3,7 +3,8 @@
 // #define TEST_BUZZER 
 // #define TEST_TEMP
 // #define TEST_ACC
-#define TEST_OLED
+// #define TEST_OLED
+#define TEST_GPS
 
 #ifdef TEST_BUZZER
 #include "Buzzer.h"
@@ -13,6 +14,8 @@
 #include "Accelerometer.h"
 #elif defined(TEST_OLED)
 #include "Oled.h"
+#elif defined(TEST_GPS)
+#include "GPS.h"
 #endif
 
 void setup() {
@@ -24,6 +27,8 @@ void setup() {
   setup_accelerometer();
 #elif defined(TEST_OLED)
   setup_oled();
+#elif defined(TEST_GPS)
+  setup_gps();
 #endif
 }
 
@@ -36,5 +41,7 @@ void loop() {
   loop_accelerometer();
 #elif defined(TEST_OLED)
   loop_oled();
+#elif defined(TEST_GPS)
+  loop_gps();
 #endif
 }
