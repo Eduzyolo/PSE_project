@@ -1,4 +1,3 @@
-#include "Arduino.h"
 
 // Define the pin connected to the buzzer
 const int BUZZER_PIN = 18;
