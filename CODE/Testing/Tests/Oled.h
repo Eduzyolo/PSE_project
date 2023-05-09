@@ -17,8 +17,5 @@ const uint8_t figures[5][8] = {
     { 0x1C, 0x22, 0x22, 0x1C, 0x08, 0x14, 0x22, 0x00 }   // Diamond
 };
 
-// Define the current figure index
-int currentFigure = 0;
-
 void setup_oled();
 void loop_oled();

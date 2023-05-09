@@ -1,6 +1,6 @@
 #include "Arduino.h"
 
-#define TEST_BUZZER 
+// #define TEST_BUZZER 
 // #define TEST_TEMP
 // #define TEST_ACC
 // #define TEST_OLED

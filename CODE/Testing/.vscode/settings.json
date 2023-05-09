@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "buzzer.h": "c",
+        "temp.h": "c"
+    },
+    "cmake.configureOnOpen": false
+}

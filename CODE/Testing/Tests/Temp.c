@@ -17,7 +17,7 @@ void loop_temp() {
   uint16_t adc_value = Wire.read() << 8 | Wire.read();
   
   // Convert the analog voltage to temperature in Celsius
-  float voltage = adc_value * ADC_RESOLUTION;
+  float voltage = adc_value * ADC_RES;
   float temperature_c = (voltage - 0.5) * TC_SCALE;
   
   // Convert the temperature to Kelvin and Fahrenheit

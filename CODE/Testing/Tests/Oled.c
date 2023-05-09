@@ -1,4 +1,6 @@
 #include "Oled.h" 
+// Define the current figure index
+int currentFigure = 0;
 
 void setup_oled() {
     // Initialize serial communication

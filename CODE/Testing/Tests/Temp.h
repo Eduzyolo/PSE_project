@@ -6,7 +6,7 @@
 
 // Define constants for temperature conversion
 const float VREF = 3.3;    // reference voltage of Pico
-const float ADC_RESOLUTION = 3.3 / 65535.0;   // ADC resolution of Pico
+const float ADC_RES = VREF / 65535.0;   // ADC resolution of Pico
 const float TC_SCALE = 100.0;   // Temperature scale factor
 
 void setup_temp();
