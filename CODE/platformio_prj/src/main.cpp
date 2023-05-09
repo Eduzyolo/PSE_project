@@ -3,9 +3,10 @@
 // #define TEST_BUZZER 
 // #define TEST_TEMP
 // #define TEST_ACC
-#define TEST_OLED
+// #define TEST_OLED
 // #define TEST_GPS
 // #define TEST_LED
+// #define TEST_EEPROM
 
 #ifdef TEST_BUZZER
 #include "Buzzer.h"
@@ -19,6 +20,8 @@
 #include "GPS.h"
 #elif defined(TEST_LED)
 #include "Led.h"
+#elif defined(TEST_EEPROM)
+#include "Eeprom.h"
 #endif
 
 void setup() {
@@ -34,6 +37,8 @@ void setup() {
   setup_gps();
 #elif defined(TEST_LED)
   setup_led();
+#elif defined(TEST_EEPROM)
+  setup_eeprom();
 #endif
 }
 
@@ -50,5 +55,7 @@ void loop() {
   loop_gps();
 #elif defined(TEST_LED)
   loop_led();
+#elif defined(TEST_EEPROM)
+  loop_eeprom();
 #endif
 }
