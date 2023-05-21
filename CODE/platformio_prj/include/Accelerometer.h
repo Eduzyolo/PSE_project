@@ -34,7 +34,7 @@ int16_t read16(uint8_t addr) {
 
 void setup_accelerometer() {
     // Start the serial communication
-    Serial.begin(9600);
+    Serial.begin(SERIAL_BAUD_RATE);
 
     // Set the MMA8451Q to active mode
     Wire.beginTransmission(MMA8451Q_ADDR);

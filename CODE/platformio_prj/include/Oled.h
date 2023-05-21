@@ -3,9 +3,6 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-// Define the I2C address of the OLED display
-#define OLED_ADDR   0x3C
-
 // Initialize the OLED display object with the specified width and height
 Adafruit_SSD1306 display(128, 64, &Wire, -1);
 
@@ -18,20 +15,18 @@ const uint8_t figures[5][8] = {
     { 0x1C, 0x22, 0x22, 0x1C, 0x08, 0x14, 0x22, 0x00 }   // Diamond
 };
 
-void setup_oled();
-void loop_oled();
 // Define the current figure index
 int currentFigure = 0;
 
 void setup_oled() {
     // Initialize serial communication
-    Serial.begin(9600);
+    Serial.begin(SERIAL_BAUD_RATE);
     
     // Start the I2C bus
     Wire.begin();
 
     // Initialize the OLED display
-    if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
+    if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
         Serial.println(F("SSD1306 allocation failed"));
         for (;;);
     }

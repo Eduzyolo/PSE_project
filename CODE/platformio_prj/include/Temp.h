@@ -1,8 +1,5 @@
 #include <Wire.h>
 
-// Define the I2C address of the temperature sensor
-#define SENSOR_ADDRESS 0x48
-
 // Define constants for temperature conversion
 const float VREF = 3.3;    // reference voltage of Pico
 const float ADC_RES = VREF / 65535.0;   // ADC resolution of Pico
@@ -14,7 +11,7 @@ void loop_temp();
 
 void setup_temp() {
   // Initialize serial communication
-  Serial.begin(9600);
+  Serial.begin(SERIAL_BAUD_RATE);
   
   // Initialize I2C communication
   Wire.begin();
@@ -22,10 +19,10 @@ void setup_temp() {
 
 void loop_temp() {
   // Read the analog voltage from the temperature sensor
-  Wire.beginTransmission(SENSOR_ADDRESS);
+  Wire.beginTransmission(TEMP_SENSOR_ADDRESS);
   Wire.write(0x00);  // Select temperature register
   Wire.endTransmission();
-  Wire.requestFrom(SENSOR_ADDRESS, 2);
+  Wire.requestFrom(TEMP_SENSOR_ADDRESS, 2);
   uint16_t adc_value = Wire.read() << 8 | Wire.read();
   
   // Convert the analog voltage to temperature in Celsius

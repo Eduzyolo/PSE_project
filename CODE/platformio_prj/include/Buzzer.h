@@ -1,8 +1,5 @@
 #include <Arduino.h>
 
-// Define the pin connected to the buzzer
-const int BUZZER_PIN = 18;
-
 // Define the frequency of each note
 const int tone_G4 = 391;
 const int tone_E4 = 329;
@@ -11,7 +8,7 @@ const int tone_D5 = 587;
 const int tone_E5 = 659;
 
 // Define the duration of each note
-const int QUARTER_NOTE = 500;
+#define QUARTER_NOTE 500
 
 // Define the melody as an array of notes
 const int melody[] = {
@@ -26,7 +23,7 @@ const int melody[] = {
 
 void setup_buzzer() {
     // Initialize the buzzer pin as an output
-    pinMode(BUZZER_PIN, OUTPUT);
+    pinMode(BUZZER, OUTPUT);
 }
 
 void loop_buzzer() {
@@ -37,9 +34,9 @@ void loop_buzzer() {
             delay(QUARTER_NOTE);
         } else {
             // Play the note for the duration of a quarter note
-            tone(BUZZER_PIN, melody[i], QUARTER_NOTE);
+            tone(BUZZER, melody[i], QUARTER_NOTE);
             delay(QUARTER_NOTE);
-            noTone(BUZZER_PIN);
+            noTone(BUZZER);
         }
     }
 }

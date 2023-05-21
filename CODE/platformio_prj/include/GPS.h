@@ -5,12 +5,9 @@
 // Initialize the GPS object
 SFE_UBLOX_GNSS myGPS;
 
-void setup_gps();
-void loop_gps();
-
 void setup_gps() {
     // Start the serial communication
-    Serial.begin(9600);
+    Serial.begin(SERIAL_BAUD_RATE);
 
     // Start the I2C bus
     Wire.begin();

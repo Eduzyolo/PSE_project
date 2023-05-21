@@ -6,6 +6,8 @@
 #define LED_RP 25
 #define LED_STRIP 13
 
+#define SERIAL_BAUD_RATE 9600
+
 #define SDA 0 
 #define SCL 1 
 
@@ -48,6 +50,8 @@
 #define EEPROM_ADDRESS 0x50 //hopefully, already defined in the library
 #define ACC_ADDRESS 0x00
 #define STRIP_LENGHT 8
+#define AS5600_ADDRESS 0x36
+#define TEMP_SENSOR_ADDRESS 0x48
 
 // Define the I2C address of the MMA8451Q accelerometer
 #define MMA8451Q_ADDR   0x1C

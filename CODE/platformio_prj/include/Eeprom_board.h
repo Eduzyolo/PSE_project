@@ -8,7 +8,7 @@
 
 void setup_eeprom() {
     // Start the serial communication
-    Serial.begin(9600);
+    Serial.begin(SERIAL_BAUD_RATE);
 
     // Start the I2C bus
     Wire.begin();
