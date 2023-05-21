@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include <Wire.h>
 
 // Define the I2C address of the temperature sensor

@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 // #define TEST_BUZZER 
-// #define TEST_TEMP
+#define TEST_TEMP
 // #define TEST_ACC
 // #define TEST_OLED
 // #define TEST_GPS
@@ -22,7 +22,7 @@
 #elif defined(TEST_LED)
 #include "Led.h"
 #elif defined(TEST_EEPROM)
-#include "Eeprom.h"
+#include "Eeprom_board.h"
 #elif defined(TEST_ENCODER)
 #include "Encoder.h"
 #endif
