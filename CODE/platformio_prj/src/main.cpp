@@ -8,6 +8,7 @@
 // #define TEST_LED
 // #define TEST_EEPROM
 // #define TEST_ENCODER
+#define TEST_BTNS
 
 #ifdef TEST_BUZZER
 #include "Buzzer.h"
@@ -25,6 +26,8 @@
 #include "Eeprom_board.h"
 #elif defined(TEST_ENCODER)
 #include "Encoder.h"
+#elif defined(TEST_BTNS)
+#include "Buttons.h"
 #endif
 
 void setup() {
@@ -44,6 +47,8 @@ void setup() {
   setup_eeprom();
 #elif defined(TEST_ENCODER)
   setup_encoder();
+#elif defined(TEST_BTNS)
+  setup_btns();
 #endif
 }
 
@@ -64,5 +69,7 @@ void loop() {
   loop_eeprom();
 #elif defined(TEST_ENCODER)
   loop_encoder();
+#elif defined(TEST_BTNS)
+  loop_btns();
 #endif
 }
