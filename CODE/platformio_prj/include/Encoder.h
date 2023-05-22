@@ -1,43 +1,47 @@
-#include <Wire.h>
-#include <AS5600.h>
+//
+//    FILE: AS5600_demo_software_direction.ino
+//  AUTHOR: Rob Tillaart
+// PURPOSE: demo software direction control
 
-AS5600 as5600;                // AS5600 object
-int rotationCountCW = 0;      // Counter for clockwise rotations
-int rotationCountCCW = 0;     // Counter for counterclockwise rotations
-int previousAngle = 0;        // Previous angle reading from the encoder
 
-void setup_encoder() {
-  Wire.begin();               // Initialize I2C communication
+//  connect the DIR pin of teh AS5600 to GND
+
+
+#include "AS5600.h"
+#include "Wire.h"
+
+AS5600 as5600;   //  use default Wire
+
+uint8_t counter = 0;
+
+void setup_encoder()
+{
   Serial.begin(SERIAL_BAUD_RATE);
+  Wire.begin();
+
+  as5600.begin();      //  set software direction control. default param = 255
+  as5600.setDirection(AS5600_CLOCK_WISE);  // default, just be explicit.
+}
+
+
+void loop_encoder()
+{
+  //  toggle direction every 10 reads.
+  counter++;
+  if (counter < 10) as5600.setDirection(AS5600_CLOCK_WISE);
+  else              as5600.setDirection(AS5600_COUNTERCLOCK_WISE);
+  if (counter >= 20) counter = 0;
   
-  as5600.begin();             // Initialize the AS5600 encoder
-  as5600.setMode(AS5600_MODE_CONTINUOUS);
+  Serial.print(millis());
+  Serial.print("\t");
+  Serial.print(as5600.getDirection());
+  Serial.print("\t");
+  Serial.print(as5600.readAngle());
+  Serial.print("\t");
+  Serial.println(as5600.rawAngle() * AS5600_RAW_TO_DEGREES);
+
+  delay(1000);
 }
 
-void loop_encoder() {
-  int currentAngle = as5600.getPosition();  // Read the current angle from the encoder
 
-  // Check for clockwise rotation
-  if (currentAngle < previousAngle) {
-    if (previousAngle - currentAngle > 180) {
-      rotationCountCW++;
-    }
-  }
-
-  // Check for counterclockwise rotation
-  if (currentAngle > previousAngle) {
-    if (currentAngle - previousAngle > 180) {
-      rotationCountCCW++;
-    }
-  }
-
-  previousAngle = currentAngle;  // Update the previous angle
-
-  // Print the rotation counts
-  Serial.print("CW rotations: ");
-  Serial.print(rotationCountCW);
-  Serial.print(", CCW rotations: ");
-  Serial.println(rotationCountCCW);
-
-  delay(100);   // Delay for stability
-}
+// -- END OF FILE --

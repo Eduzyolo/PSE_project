@@ -8,8 +8,8 @@
 // #define TEST_GPS
 // #define TEST_LED
 // #define TEST_EEPROM
-// #define TEST_ENCODER
-#define TEST_BTNS
+#define TEST_ENCODER
+// #define TEST_BTNS
 
 #ifdef TEST_BUZZER
 #include "Buzzer.h"
