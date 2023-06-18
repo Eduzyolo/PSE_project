@@ -1,4 +1,6 @@
 IMPOSTAZIONI E OGGETTI NECESSARI PER IL CASE
+per un breve tutorial visitare la pagina:
+https://floppylab.altervista.org/case-per-un-circuito/
 
 IMPOSTAZIONI STAMPA (valide per tutte le parti):
  - materiale PLA
@@ -15,7 +17,7 @@ IMPOSTAZIONI STAMPA (valide per tutte le parti):
   - 7 viti M3 16mm (testa svasata)
   - molle Ø 4mm, Ø filo 0.2mm, lunghezza 5mm
   	- (quelle delle penne da scrivere vanno bene) -> da tagliare in pezzi lunghi 5mm circa
-  - 5 inserti filettati in ottone M3 4mm
+  - 5 inserti filettati in ottone M3 3mm
   - 30cm tubo in PVC trasparente Øext 6mm, Øint 4mm
 
 OGGETTI FACOLTATIVI:
