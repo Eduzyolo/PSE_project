@@ -1,3 +1,5 @@
+#ifdef TEST_BUZZER
+
 #include <Arduino.h>
 
 // Define the frequency of each note
@@ -40,3 +42,5 @@ void loop_buzzer() {
         }
     }
 }
+
+#endif

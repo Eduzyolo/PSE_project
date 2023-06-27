@@ -1,3 +1,5 @@
+#ifdef TEST_EEPROM
+
 #include <Arduino.h>
 #include <Wire.h>
 #include "EEPROM.h"
@@ -57,3 +59,4 @@ void loop_eeprom() {
     Serial.print("World: ");
     Serial.println(world);
 }
+#endif

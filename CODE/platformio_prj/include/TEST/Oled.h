@@ -1,3 +1,6 @@
+#ifdef TEST_OLED
+
+
 #include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -52,3 +55,4 @@ void loop_oled() {
     display.drawBitmap(0, 0, figures[currentFigure], 8, 8, WHITE);
     display.display();
 }
+#endif

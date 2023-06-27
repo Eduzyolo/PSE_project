@@ -1,3 +1,5 @@
+#ifdef TEST_LED
+
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 
@@ -38,3 +40,5 @@ uint32_t Wheel(byte WheelPos) {
         return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
     }
 }
+
+#endif

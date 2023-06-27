@@ -1,3 +1,5 @@
+#ifdef TEST_EEPROM
+
 /*
     EEPROM.cpp - RPI2040 EEPROM emulation
 
@@ -84,3 +86,5 @@ protected:
 };
 
 extern EEPROMClass EEPROM;
+
+#endif

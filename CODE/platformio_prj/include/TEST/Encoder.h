@@ -1,3 +1,5 @@
+#ifdef TEST_ENCODER
+
 //
 //    FILE: AS5600_demo_software_direction.ino
 //  AUTHOR: Rob Tillaart
@@ -45,3 +47,4 @@ void loop_encoder()
 
 
 // -- END OF FILE --
+#endif

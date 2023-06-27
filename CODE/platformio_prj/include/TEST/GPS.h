@@ -1,3 +1,5 @@
+#ifdef TEST_GPS
+
 #include <Arduino.h>
 #include <Wire.h>
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h>
@@ -49,3 +51,4 @@ void loop_gps() {
         Serial.println(numSatellites);
     }
 }
+#endif

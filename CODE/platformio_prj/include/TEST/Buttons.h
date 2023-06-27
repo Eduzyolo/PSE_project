@@ -1,3 +1,5 @@
+#ifdef TEST_BTNS
+
 #include <Arduino.h>
 #include <Debounce.h>
 
@@ -39,3 +41,5 @@ void loop_btns() {
     }
     delay(10);
 }
+
+#endif

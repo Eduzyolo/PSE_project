@@ -1,4 +1,4 @@
-
+#ifdef TEST_ACC
 #include <Arduino.h>
 #include <Wire.h>
 
@@ -42,3 +42,4 @@ void loop_accelerometer() {
     // Wait for 100 milliseconds
     delay(100);
 }
+#endif TEST_ACC

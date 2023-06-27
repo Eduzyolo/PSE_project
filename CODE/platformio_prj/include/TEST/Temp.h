@@ -1,3 +1,5 @@
+#ifdef TEST_TEMP
+
 #include <Wire.h>
 
 // Define constants for temperature conversion
@@ -41,3 +43,5 @@ void loop_temp() {
   // Wait for 1 second before taking the next reading
   delay(1000);
 }
+
+#endif
