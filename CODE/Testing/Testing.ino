@@ -4,18 +4,18 @@
 // #define TEST_TEMP
 // #define TEST_ACC
 // #define TEST_OLED
-#define TEST_GPS
+// #define TEST_GPS
 
 #ifdef TEST_BUZZER
-#include "Buzzer.h"
+#include "Tests/Buzzer.h"
 #elif defined(TEST_TEMP)
-#include "Temp.h"
+#include "Tests/Temp.h"
 #elif defined(TEST_ACC)
-#include "Accelerometer.h"
+#include "Tests/Accelerometer.h"
 #elif defined(TEST_OLED)
-#include "Oled.h"
+#include "Tests/Oled.h"
 #elif defined(TEST_GPS)
-#include "GPS.h"
+#include "Tests/GPS.h"
 #endif
 
 void setup() {
